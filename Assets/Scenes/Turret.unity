@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 135528629}
   m_Layer: 0
   m_Name: Target-Yellow
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!1001 &403135418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -348,13 +349,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 135528625}
   targets:
+  - {fileID: 135528625}
   - {fileID: 1095541084}
   - {fileID: 1750980173}
   - {fileID: 641393313}
   - {fileID: 2052487403}
   - {fileID: 1479422687}
   - {fileID: 1247840563}
-  - {fileID: 135528625}
   turretAxisY: {fileID: 403135421}
   turretAxisX: {fileID: 403135420}
   shootPoint: {fileID: 1847588711}
@@ -375,7 +376,7 @@ GameObject:
   - component: {fileID: 641393317}
   m_Layer: 0
   m_Name: Target-Purple
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,6 +485,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +725,7 @@ GameObject:
   - component: {fileID: 1095541088}
   m_Layer: 0
   m_Name: Target-Blue
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -762,10 +764,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.8473959
+  m_Height: 3.3895836
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -0.3473959}
 --- !u!23 &1095541086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -832,6 +834,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!1 &1247840562
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +850,7 @@ GameObject:
   - component: {fileID: 1247840567}
   m_Layer: 0
   m_Name: Target-White
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -956,6 +959,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!1 &1479422686
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +975,7 @@ GameObject:
   - component: {fileID: 1479422691}
   m_Layer: 0
   m_Name: Target-Orange
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1080,6 +1084,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!1 &1531034341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1310,7 @@ GameObject:
   - component: {fileID: 1750980177}
   m_Layer: 0
   m_Name: Target-Red
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1414,6 +1419,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!4 &1847588711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4411725851834284, guid: d4af3966dba2cd746ab019083640eb8c, type: 3}
@@ -1574,7 +1580,7 @@ GameObject:
   - component: {fileID: 2052487407}
   m_Layer: 0
   m_Name: Target-Green
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1683,6 +1689,7 @@ MonoBehaviour:
   actualVida: 0
   inmortal: 0
   tiempoInmortal: 1
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!1 &2141424179
 GameObject:
   m_ObjectHideFlags: 0

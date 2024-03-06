@@ -18,17 +18,17 @@ public class AutomaticTurret : MonoBehaviour
     private float V0;
     private float g = 9.81f;
 
-    void Update()
+     void Update()
     {
-        if (targets[currentTargetIndex] == null) // Si el objetivo actual ha sido eliminado
+        if (targets[currentTargetIndex] == null)
         {
-            currentTargetIndex++; // Pasamos al siguiente objetivo
-            if (currentTargetIndex >= targets.Count) // Si hemos superado el número de objetivos
+            currentTargetIndex++;
+            if (currentTargetIndex >= targets.Count)
             {
-                currentTargetIndex = 0; // Volvemos al primer objetivo
+                currentTargetIndex = 0;
             }
         }
-        target = targets[currentTargetIndex]; // Actualizamos el objetivo actual
+        target = targets[currentTargetIndex];
 
         TurretRotation();
         AimRotation();

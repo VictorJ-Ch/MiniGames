@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   P0: {x: 0, y: 0, z: 0}
   V0: {x: 0, y: 0, z: 0}
+  explosionPrefab: {fileID: 7316747640428954687, guid: e3b3c035bfe25e04fb7531ceeefd9ee7, type: 3}
 --- !u!120 &7952036717729835632
 LineRenderer:
   serializedVersion: 2

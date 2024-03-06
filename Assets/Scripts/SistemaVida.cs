@@ -11,7 +11,7 @@ public class SistemaVida : MonoBehaviour
     public bool inmortal = false;
     public float tiempoInmortal = 1.0f;
 
-    
+    public GameObject explosionPrefab;
 
     private void Start()
     {
@@ -45,6 +45,7 @@ public class SistemaVida : MonoBehaviour
 
     public void Muerte()
     {
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 
@@ -54,5 +55,5 @@ public class SistemaVida : MonoBehaviour
         yield return new WaitForSeconds(tiempoInmortal);
         inmortal = false;
     }
-
 }
+
