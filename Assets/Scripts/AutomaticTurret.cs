@@ -1,26 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class AutomaticTurret : MonoBehaviour
 {
     public Transform target;
-    public Transform target1;
-    public Transform target2;
-    public Transform target3;
-    public Transform target4;
-    public Transform target5;
-    public Transform target6;
+    public List<Transform> targets;
+    private int currentTargetIndex = 0;
+
     public Transform turretAxisY;
     public Transform turretAxisX;
     public Transform shootPoint;
     public GameObject bulletPrefab;
+
     public float rotSpeed;
     private float V0;
     private float g = 9.81f;
 
     void Update()
     {
+        if (targets[currentTargetIndex] == null) // Si el objetivo actual ha sido eliminado
+        {
+            currentTargetIndex++; // Pasamos al siguiente objetivo
+            if (currentTargetIndex >= targets.Count) // Si hemos superado el número de objetivos
+            {
+                currentTargetIndex = 0; // Volvemos al primer objetivo
+            }
+        }
+        target = targets[currentTargetIndex]; // Actualizamos el objetivo actual
+
         TurretRotation();
         AimRotation();
         if(Input.GetKeyDown(KeyCode.Mouse0))

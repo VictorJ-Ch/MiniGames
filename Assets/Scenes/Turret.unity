@@ -347,12 +347,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 135528625}
-  target1: {fileID: 0}
-  target2: {fileID: 0}
-  target3: {fileID: 0}
-  target4: {fileID: 0}
-  target5: {fileID: 0}
-  target6: {fileID: 0}
+  targets:
+  - {fileID: 1095541084}
+  - {fileID: 1750980173}
+  - {fileID: 641393313}
+  - {fileID: 2052487403}
+  - {fileID: 1479422687}
+  - {fileID: 1247840563}
+  - {fileID: 135528625}
   turretAxisY: {fileID: 403135421}
   turretAxisX: {fileID: 403135420}
   shootPoint: {fileID: 1847588711}
@@ -370,6 +372,7 @@ GameObject:
   - component: {fileID: 641393316}
   - component: {fileID: 641393315}
   - component: {fileID: 641393314}
+  - component: {fileID: 641393317}
   m_Layer: 0
   m_Name: Target-Purple
   m_TagString: Untagged
@@ -465,6 +468,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641393312}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &641393317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641393312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +720,7 @@ GameObject:
   - component: {fileID: 1095541087}
   - component: {fileID: 1095541086}
   - component: {fileID: 1095541085}
+  - component: {fileID: 1095541088}
   m_Layer: 0
   m_Name: Target-Blue
   m_TagString: Untagged
@@ -796,6 +816,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095541083}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1095541088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095541083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!1 &1247840562
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +844,7 @@ GameObject:
   - component: {fileID: 1247840566}
   - component: {fileID: 1247840565}
   - component: {fileID: 1247840564}
+  - component: {fileID: 1247840567}
   m_Layer: 0
   m_Name: Target-White
   m_TagString: Untagged
@@ -903,6 +940,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247840562}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1247840567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247840562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!1 &1479422686
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +968,7 @@ GameObject:
   - component: {fileID: 1479422690}
   - component: {fileID: 1479422689}
   - component: {fileID: 1479422688}
+  - component: {fileID: 1479422691}
   m_Layer: 0
   m_Name: Target-Orange
   m_TagString: Untagged
@@ -1010,6 +1064,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479422686}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1479422691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479422686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!1 &1531034341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1302,7 @@ GameObject:
   - component: {fileID: 1750980176}
   - component: {fileID: 1750980175}
   - component: {fileID: 1750980174}
+  - component: {fileID: 1750980177}
   m_Layer: 0
   m_Name: Target-Red
   m_TagString: Untagged
@@ -1327,6 +1398,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750980172}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1750980177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750980172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!4 &1847588711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4411725851834284, guid: d4af3966dba2cd746ab019083640eb8c, type: 3}
@@ -1484,6 +1571,7 @@ GameObject:
   - component: {fileID: 2052487406}
   - component: {fileID: 2052487405}
   - component: {fileID: 2052487404}
+  - component: {fileID: 2052487407}
   m_Layer: 0
   m_Name: Target-Green
   m_TagString: Untagged
@@ -1579,6 +1667,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052487402}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2052487407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052487402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!1 &2141424179
 GameObject:
   m_ObjectHideFlags: 0
