@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 135528628}
   - component: {fileID: 135528627}
   - component: {fileID: 135528626}
+  - component: {fileID: 135528629}
   m_Layer: 0
   m_Name: Target-Yellow
   m_TagString: Untagged
@@ -230,6 +231,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135528624}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &135528629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135528624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79bc791ece9d134697b8da1f13d9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 50
+  actualVida: 0
+  inmortal: 0
+  tiempoInmortal: 1
 --- !u!1001 &403135418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,12 +347,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 135528625}
-  target1: {fileID: 1095541084}
-  target2: {fileID: 1750980173}
-  target3: {fileID: 641393313}
-  target4: {fileID: 2052487403}
-  target5: {fileID: 1479422687}
-  target6: {fileID: 1247840563}
+  target1: {fileID: 0}
+  target2: {fileID: 0}
+  target3: {fileID: 0}
+  target4: {fileID: 0}
+  target5: {fileID: 0}
+  target6: {fileID: 0}
   turretAxisY: {fileID: 403135421}
   turretAxisX: {fileID: 403135420}
   shootPoint: {fileID: 1847588711}
