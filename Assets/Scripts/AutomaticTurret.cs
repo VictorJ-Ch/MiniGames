@@ -23,7 +23,7 @@ public class AutomaticTurret : MonoBehaviour
     {
         TurretRotation();
         AimRotation();
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
             Fire();
         }
@@ -86,4 +86,5 @@ public class AutomaticTurret : MonoBehaviour
         float dy = relativePosition.y;
         return new Vector2(dx, dy);
     }
+
 }
