@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BolaRoja : MonoBehaviour
 {
-    public float daño = 50;
+    public float damage = 50;
 
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.GetComponent<SistemaVida>() != null)
         {
-            other.gameObject.GetComponent<SistemaVida>().QuitarVida(daño);
+            other.gameObject.GetComponent<SistemaVida>().QuitarVida(damage);
         }
     }
 }
