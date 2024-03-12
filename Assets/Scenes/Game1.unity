@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueMagnitude: 10
-  players: 1
+  players: 0
 --- !u!135 &1202719105
 SphereCollider:
   m_ObjectHideFlags: 0
