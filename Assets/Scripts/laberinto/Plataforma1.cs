@@ -11,7 +11,7 @@ public class Plataforma : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player1")
         {
             // Cambia a la nueva escena
             SceneManager.LoadScene(2);

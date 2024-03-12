@@ -272,6 +272,8 @@ GameObject:
   - component: {fileID: 497711183}
   - component: {fileID: 497711182}
   - component: {fileID: 497711185}
+  - component: {fileID: 497711187}
+  - component: {fileID: 497711186}
   m_Layer: 0
   m_Name: Win
   m_TagString: Untagged
@@ -359,12 +361,38 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.0000001, y: 1.9999999, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &497711186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497711180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06affa428ae323c4d86065e92a43573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinPl2: 
+--- !u!114 &497711187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497711180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b76b35ee67c3fe444b3f99582fcd8f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinPl2: 
 --- !u!1 &643283975
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +503,7 @@ GameObject:
   - component: {fileID: 1263900142}
   m_Layer: 0
   m_Name: jugador2
-  m_TagString: Azucar
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +615,7 @@ Transform:
   m_GameObject: {fileID: 1263900135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 5.5, z: -0.03}
+  m_LocalPosition: {x: 3.98, y: 5.71, z: -0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -816,7 +844,7 @@ GameObject:
   - component: {fileID: 2054116040}
   m_Layer: 0
   m_Name: jugador1
-  m_TagString: Azucar
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -928,7 +956,7 @@ Transform:
   m_GameObject: {fileID: 2054116033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.67999995, y: 5.62, z: -0.029999971}
+  m_LocalPosition: {x: -3.67, y: 5.94, z: -0.029999971}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
