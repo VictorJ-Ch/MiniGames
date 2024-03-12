@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f050315807c76544803f85ca1a86dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: 
+  SceneName: Game2
 --- !u!1 &478133072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f050315807c76544803f85ca1a86dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: ball
+  SceneName: Game1
 --- !u!1 &1347086326
 GameObject:
   m_ObjectHideFlags: 0
