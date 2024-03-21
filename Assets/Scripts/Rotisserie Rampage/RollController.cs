@@ -8,7 +8,7 @@ public class RollController : MonoBehaviour
     float xAngle;
     void Update()
     {
-        float vInput = Input.GetAxis("Horizontal");
+        float vInput = Input.GetAxis("Horizontal-P2");
         xAngle += angularSpeed * vInput* Time.deltaTime;
         transform.rotation = Quaternion.Euler(xAngle, 0 , 0);
     }

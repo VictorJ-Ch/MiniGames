@@ -24,7 +24,7 @@ public class RollRunnerController : MonoBehaviour
     }
     void PlayerMovement()
     {
-        float verticalInput = Input.GetAxis("Vertical");
+        float verticalInput = Input.GetAxis("Vertical-P1");
         angle += angularSpeed * verticalInput * Time.deltaTime;
         transform.localPosition = AngularPosition();
         Vector3 up = AngularPosition();
