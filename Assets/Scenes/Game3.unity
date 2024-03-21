@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 500e549cf199d254fbdc6406e160c8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularSpeed: 100
+  angularSpeed: 150
   radius: 5
 --- !u!54 &200196592
 Rigidbody:
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 343080698}
   - component: {fileID: 343080697}
   - component: {fileID: 343080696}
-  - component: {fileID: 343080695}
+  - component: {fileID: 343080700}
   m_Layer: 0
   m_Name: RollRunner (1)
   m_TagString: Untagged
@@ -507,20 +507,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 576778223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &343080695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343080693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500e549cf199d254fbdc6406e160c8b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  angularSpeed: 100
-  radius: 5
 --- !u!54 &343080696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -619,6 +605,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343080693}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &343080700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343080693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3a22a10ecc23743a857cf58543774f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: 150
+  radius: 5
 --- !u!1 &449861534
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 2058151052}
   - component: {fileID: 2058151051}
   - component: {fileID: 2058151050}
-  - component: {fileID: 2058151049}
+  - component: {fileID: 2058151054}
   m_Layer: 0
   m_Name: RollRunner (2)
   m_TagString: Untagged
@@ -1006,20 +1006,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 576778223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2058151049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2058151047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500e549cf199d254fbdc6406e160c8b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  angularSpeed: 100
-  radius: 5
 --- !u!54 &2058151050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1118,6 +1104,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058151047}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2058151054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058151047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6467df9bf7b427f4fb217804a6d54e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: 150
+  radius: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
