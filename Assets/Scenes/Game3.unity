@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 75934455}
   - component: {fileID: 75934454}
   - component: {fileID: 75934453}
+  - component: {fileID: 75934456}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -229,6 +230,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75934451}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &75934456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75934451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3de4f5bf5a52748b327833f59c4667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ganasteScreen: {fileID: 0}
 --- !u!1 &149938217
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +354,7 @@ GameObject:
   - component: {fileID: 200196596}
   m_Layer: 0
   m_Name: RollRunner
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,7 +638,7 @@ GameObject:
   - component: {fileID: 343080701}
   m_Layer: 0
   m_Name: RollRunner (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1841,7 +1855,7 @@ GameObject:
   - component: {fileID: 2058151055}
   m_Layer: 0
   m_Name: RollRunner (2)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
