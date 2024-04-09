@@ -42,5 +42,20 @@ public class SliderPlayer : MonoBehaviour
         Vector3 newDir =  InputDir - Vector3.Dot(InputDir, transform.up) * transform.up;
         Vector3 force = forceMagnitude * newDir * dt;
         rb.AddForce(force, ForceMode.Force);
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("BowlLimit"))
+        {
+            float forceMagnitude = 1;
+            float torqueMagnitude = 1;
+            Vector3 force = forceMagnitude * (transform.position).normalized;
+            rb.AddForce(force, ForceMode.Impulse);
+            Vector3 torque = torqueMagnitude * Random.onUnitSphere;
+            rb.AddTorque(torque, ForceMode.Impulse);
+        }
+
     }
 }
