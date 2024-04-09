@@ -17,20 +17,8 @@ public class SliderPlayer : MonoBehaviour
 
     void FixedUpdate()
     {
-        MovementControl();
+        MovementControl2();
         Rotationrectification();
-    }
-
-    void MovementControl()
-    {
-        float dt = Time.deltaTime;
-        float hInput = Input.GetAxis(horizontalInputName);
-        float vInput = Input.GetAxis(verticalInputName);
-
-        Vector3 torque = torqueMagnitude * transform.up * hInput * dt;
-        Vector3 force = forceMagnitude * transform.forward * vInput * dt;
-        rb.AddTorque(torque, ForceMode.Force);
-        rb.AddForce(force, ForceMode.Force);
     }
 
     void Rotationrectification()
