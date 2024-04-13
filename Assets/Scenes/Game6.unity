@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15522644, g: 0.13040099, b: 0.10050721, a: 1}
+  m_IndirectSpecularColor: {r: 0.45022905, g: 0.500262, b: 0.5753784, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -348,13 +348,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673389284}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07917893, y: -0.25794795, z: -0.021215945, w: 0.96267515}
+  m_LocalRotation: {x: -0.0489822, y: -0.94426364, z: 0.3230982, w: -0.039680526}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -9.404, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 37.884, y: -183.144, z: 4.86}
 --- !u!1 &676831312
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,9 +938,10 @@ GameObject:
   - component: {fileID: 1298411935768520483}
   - component: {fileID: 1823731805512826267}
   - component: {fileID: 1823731805512826266}
+  - component: {fileID: 1823731805512826268}
   m_Layer: 0
   m_Name: Arrow
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1065,6 +1066,19 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1823731805512826268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823731805512826265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37ab3d1775526d4995cba83b1c09d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
 --- !u!33 &1993693852987528013
 MeshFilter:
   m_ObjectHideFlags: 0
