@@ -25,9 +25,6 @@ public class SistemaVida : MonoBehaviour
 
         if (actualVida <= 0)
             Muerte();
-
-        // UI
-        
     }
 
     public void QuitarVida(float daño)
