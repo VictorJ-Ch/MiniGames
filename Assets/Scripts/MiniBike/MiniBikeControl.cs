@@ -17,7 +17,7 @@ public class MiniBikeControl : MonoBehaviour
     void Update()
     {
         rb.drag = drag;
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetButtonDown("Jump"))
         {
             float dt = Time.deltaTime;
             Vector3 appliedForce = forceMagnitude * transform.forward * dt;
@@ -27,7 +27,7 @@ public class MiniBikeControl : MonoBehaviour
         float speed = rb.velocity.magnitude;
         float angularSpeed = speed / 0.29f;
         float angle = Mathf.Rad2Deg * Time.deltaTime * angularSpeed;
-        for(int i = 0; 1 < bikedParts.Length; i++)
+        for(int i = 0; i < bikedParts.Length; i++)
         {
             bikedParts[i].Rotate(0,0,angle, Space.Self);
         }
