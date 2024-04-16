@@ -8,6 +8,7 @@ public class JumperPlayer : MonoBehaviour
     [Range(-20f, 1f)] public float gravity;
     private bool grounded;
     private Rigidbody rb;
+    public KeyCode keycode;
 
     void Start()
     {
@@ -17,8 +18,11 @@ public class JumperPlayer : MonoBehaviour
     void Update()
     {
         Physics.gravity = new Vector3(0, gravity, 0);
-        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        
+        if( grounded && Input.GetKeyDown(keycode))
+        {
             rb.AddForce(jumpImpulse * transform.up, ForceMode.Impulse);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

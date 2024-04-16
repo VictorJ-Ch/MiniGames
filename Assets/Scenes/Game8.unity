@@ -1421,12 +1421,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a91f500c946ab9408239796a3e5d3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10000
+  forceMagnitude: 1000
   drag: 1
   bikedParts:
   - {fileID: 312509407}
   - {fileID: 569561073}
   - {fileID: 288688252}
+  keycode: 32
 --- !u!4 &594939893
 Transform:
   m_ObjectHideFlags: 0
@@ -1889,7 +1890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782811414}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.75705177, w: 0.6533549}
   m_LocalPosition: {x: -27.53289, y: 0.38885626, z: 90.93064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1898,7 +1899,7 @@ Transform:
   - {fileID: 111998482}
   - {fileID: 1062617274}
   m_Father: {fileID: 1149244715}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 818.41}
 --- !u!23 &782811416
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3357,12 +3358,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a91f500c946ab9408239796a3e5d3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10000
+  forceMagnitude: 1000
   drag: 1
   bikedParts:
   - {fileID: 782811415}
   - {fileID: 841113296}
   - {fileID: 2017529634}
+  keycode: 107
 --- !u!4 &1282632565
 Transform:
   m_ObjectHideFlags: 0
@@ -4670,12 +4672,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a91f500c946ab9408239796a3e5d3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 10000
+  forceMagnitude: 1000
   drag: 1
   bikedParts:
   - {fileID: 8617744515995870748}
   - {fileID: 8617744515995870744}
   - {fileID: 8617744515995870728}
+  keycode: 97
 --- !u!4 &2126250976
 Transform:
   m_ObjectHideFlags: 0
@@ -4917,7 +4920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8617744515996236348}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.012304304, w: 0.9999243}
   m_LocalPosition: {x: -27.53289, y: 0.38885626, z: 90.93064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4926,7 +4929,7 @@ Transform:
   - {fileID: 8617744515995870736}
   - {fileID: 8617744515995870738}
   m_Father: {fileID: 8617744515995870746}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.41}
 --- !u!4 &8617744515995870750
 Transform:
   m_ObjectHideFlags: 0
