@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 442874636}
   - component: {fileID: 442874635}
   m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -704,6 +704,7 @@ GameObject:
   - component: {fileID: 543450653513128371}
   - component: {fileID: 919132149241266955}
   - component: {fileID: 919132149241266954}
+  - component: {fileID: 919132149241266956}
   m_Layer: 0
   m_Name: AmougUs
   m_TagString: Untagged
@@ -761,6 +762,20 @@ CapsuleCollider:
   m_Height: 3.2964876
   m_Direction: 1
   m_Center: {x: 0.011514366, y: -0.7593473, z: 0}
+--- !u!114 &919132149241266956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149241266953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622cf214166f7cd47953d9253373730e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpImpulse: 10
+  gravity: -15
 --- !u!4 &1595224590979223827
 Transform:
   m_ObjectHideFlags: 0
