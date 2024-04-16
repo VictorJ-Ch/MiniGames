@@ -16,8 +16,15 @@ public class MiniBikeControl : MonoBehaviour
 
     void Update()
     {
+        PlayerInput("Horizontal-P1"); // Jugador 1
+        PlayerInput("Jump"); // Jugador 2
+        PlayerInput("Horizontal-P2"); // Jugador 3
+    }
+
+    void PlayerInput(string buttonName)
+    {
         rb.drag = drag;
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown(buttonName))
         {
             float dt = Time.deltaTime;
             Vector3 appliedForce = forceMagnitude * transform.forward * dt;
