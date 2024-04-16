@@ -14,7 +14,7 @@ public class spikedWheels : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.F))
         {
             GameObject wheel = Instantiate(wheelPrefab, transform.position, Quaternion.identity);
             Vector3 velocity = speed * transform.right;
