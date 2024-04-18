@@ -13,6 +13,7 @@ TagManager:
   - Ramp
   - Arrow
   - Ground
+  - Bomb
   layers:
   - Default
   - TransparentFX
