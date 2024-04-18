@@ -20,12 +20,12 @@ public class PanController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            animator.SetTrigger("Pan_Left");
+            animator.SetTrigger("LeftMove");
             target = LeftPlayer;
         }
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-            animator.SetTrigger("Pan_Right");
+            animator.SetTrigger("RightMove");
             target = RightPlayer;
         }
     }
@@ -33,7 +33,7 @@ public class PanController : MonoBehaviour
     public void EnableCollider()
     {
         bool isEnabled = GetComponent<BoxCollider>().enabled;
-        GetComponent<BoxCollider>().enabled = isEnabled;
+        GetComponent<BoxCollider>().enabled = !isEnabled;
     }
 
     private Vector3 HitVelocity(Transform target, Vector3 P0)
