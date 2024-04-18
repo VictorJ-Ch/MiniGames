@@ -20,12 +20,12 @@ public class PanController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            animator.SetTrigger("LeftMove");
+            animator.SetTrigger("Pan_Left");
             target = LeftPlayer;
         }
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-            animator.SetTrigger("RightMove");
+            animator.SetTrigger("Pan_Right");
             target = RightPlayer;
         }
     }
