@@ -8,7 +8,7 @@ public class BombGenerator : MonoBehaviour
     public GameObject bombPrefab;
     void Start()
     {
-        InvokeRepeating("CreateBomb", 2, 2);
+        CreateBomb();
 
     }
 
