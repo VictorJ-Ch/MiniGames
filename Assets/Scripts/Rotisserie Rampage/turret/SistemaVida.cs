@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SistemaVida : MonoBehaviour
 {
@@ -24,10 +24,12 @@ public class SistemaVida : MonoBehaviour
             actualVida = maxVida;
 
         if (actualVida <= 0)
+        {
             Muerte();
+        }
     }
 
-    public void QuitarVida(float daño)
+    public void QuitarVida(float daño) //damage
     {
         if (inmortal) return;
 
@@ -43,7 +45,13 @@ public class SistemaVida : MonoBehaviour
     public void Muerte()
     {
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        ChangeScene(); // Llama a la función para cambiar de escena
         Destroy(this.gameObject);
+    }
+
+    void ChangeScene()
+    {
+        SceneManager.LoadScene("Game9");
     }
 
     IEnumerator TiempoInmortal()
@@ -53,4 +61,3 @@ public class SistemaVida : MonoBehaviour
         inmortal = false;
     }
 }
-

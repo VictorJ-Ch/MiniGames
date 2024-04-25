@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0536aefdbdebffd4a810f6f5b4997858, type: 2}
+  - {fileID: 2100000, guid: 2e9ac21d7357340af925294d908b0a65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2801,9 +2801,10 @@ GameObject:
   - component: {fileID: 1008350051}
   - component: {fileID: 1008350050}
   - component: {fileID: 1008350052}
+  - component: {fileID: 1008350053}
   m_Layer: 0
   m_Name: PL4
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2892,6 +2893,19 @@ MonoBehaviour:
   inmortal: 0
   tiempoInmortal: 1
   explosionPrefab: {fileID: 7316747640428954687, guid: 52f638a8a6f97934586a9b3a6e0c79bf, type: 3}
+--- !u!114 &1008350053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008350048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06affa428ae323c4d86065e92a43573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinPl2: 
 --- !u!1 &1064641325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3839,9 +3853,10 @@ GameObject:
   - component: {fileID: 1463254457}
   - component: {fileID: 1463254456}
   - component: {fileID: 1463254455}
+  - component: {fileID: 1463254458}
   m_Layer: 0
   m_Name: PL3
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3930,6 +3945,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1527765, y: 2.9978182, z: 1.2871299}
   m_Center: {x: 0.26336122, y: -0.74115384, z: -3.92}
+--- !u!114 &1463254458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463254453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06affa428ae323c4d86065e92a43573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinPl2: 
 --- !u!1 &1475717802
 GameObject:
   m_ObjectHideFlags: 0
@@ -5419,9 +5447,10 @@ GameObject:
   - component: {fileID: 1893343885}
   - component: {fileID: 1893343884}
   - component: {fileID: 1893343883}
+  - component: {fileID: 1893343886}
   m_Layer: 0
   m_Name: PL4 (1)
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5510,6 +5539,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7309773, y: 2.6549025, z: 1.2871295}
   m_Center: {x: 2.53, y: -0.52, z: -4.88}
+--- !u!114 &1893343886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893343881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06affa428ae323c4d86065e92a43573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinPl2: 
 --- !u!1 &1923661153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6009,7 +6051,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0536aefdbdebffd4a810f6f5b4997858, type: 2}
+  - {fileID: 2100000, guid: 2e9ac21d7357340af925294d908b0a65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6323,9 +6365,10 @@ GameObject:
   - component: {fileID: 1705519004619313699}
   - component: {fileID: 2080919020893325467}
   - component: {fileID: 2080919020893325466}
+  - component: {fileID: 2080919020893325468}
   m_Layer: 0
   m_Name: PL1
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6368,6 +6411,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3434054, y: 2.6549025, z: 1.6790631}
   m_Center: {x: 3.9939146, y: -0.37230492, z: -1.97}
+--- !u!114 &2080919020893325468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080919020893325465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06affa428ae323c4d86065e92a43573d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WinPl2: 
 --- !u!23 &2465969541841099762
 MeshRenderer:
   m_ObjectHideFlags: 0
