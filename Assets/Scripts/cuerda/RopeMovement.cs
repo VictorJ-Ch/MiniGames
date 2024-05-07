@@ -13,7 +13,6 @@ public class RopeMovement : MonoBehaviour
         _bezierCurve = GetComponent<BezierCurve>();
     }
 
-   
     void Update()
     {
         ControlPointsMovement();
@@ -22,7 +21,7 @@ public class RopeMovement : MonoBehaviour
 
     void FireBallsMovement()
     {
-        for (int i = 0; 1 < fireBalls.childCount; i++)
+        for (int i = 0; i < fireBalls.childCount; i++)
         {
             float si = (float)i/(fireBalls.childCount-1f);
             fireBalls.GetChild(i).position = _bezierCurve.Bezier(si);
