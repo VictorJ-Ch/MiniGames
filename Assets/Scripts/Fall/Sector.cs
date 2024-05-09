@@ -6,6 +6,6 @@ public class Sector : MonoBehaviour
 {
     public void RemoveAnimator()
     {
-        //SectorController.RemoveAnimator();
+        SectorController.RemoveAnimator();
     }
 }
