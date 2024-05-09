@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class SectorController : MonoBehaviour
 {
-    public float repeatTime;
+    public float minTime;
+    public float maxTime;
     public AnimatorController animatorController;
     public bool chooseSector;
-    public static int index; public static bool selectionActive;
+    public static int index; 
+    public static bool selectionActive;
     public static List<Transform> sectors = new List<Transform>();
     private Color originalColor;
 
-    void Start()
+    private void Start()
     {
         selectionActive = true;
         foreach (Transform child in transform)
@@ -24,9 +26,9 @@ public class SectorController : MonoBehaviour
         StartCoroutine(WaitAndChange());
     }
 
-    void Update()
+    private void Update()
     {
-        if(chooseSector)
+        if (chooseSector)
         {
             chooseSector = false;
             selectionActive = false;
@@ -43,8 +45,8 @@ public class SectorController : MonoBehaviour
     private void changeIndex()
     {
         index++;
-        if(index == sectors.Count)
-            index = 0 ;
+        if (index == sectors.Count)
+            index = 0;
     }
 
     private void SetColors()
@@ -60,15 +62,17 @@ public class SectorController : MonoBehaviour
 
     private IEnumerator WaitAndChange()
     {
-        while(true)
+        while (true)
         {
-            if(selectionActive)
-
+            if (selectionActive)
             {
                 changeIndex();
                 SetColors();
-            }       
-            yield return new WaitForSeconds(repeatTime);
+            }
+
+            float waitTime = Random.Range(minTime, maxTime);
+            yield return new WaitForSeconds(waitTime);
+            chooseSector = true;
         }
     }
 }
