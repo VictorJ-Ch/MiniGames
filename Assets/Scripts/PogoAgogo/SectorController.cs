@@ -9,7 +9,7 @@ public class SectorController : MonoBehaviour
     public AnimatorController animatorController;
     public bool chooseSector;
     public static int index; public static bool selectionActive;
-    public static List<Transform> sectors = new List<Transform>0);
+    public static List<Transform> sectors = new List<Transform>();
     private Color originalColor;
 
     void Start()
