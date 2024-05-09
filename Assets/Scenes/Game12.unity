@@ -1462,14 +1462,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1553886957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886fc2b0beac9264aacda23cf48cf9e8, type: 3}
+  m_Script: {fileID: 11500000, guid: b5dfada6d7f6a7a40837e19eeb3e7732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceImpulse: 100
-  jumpImpulse: 0
-  hInputName: Horizontal-P3
-  vInputName: Vertical-P3
-  gravity: -9.81
+  moveSpeed: 3
+  horizontalAxis: Horizontal-P3
+  verticalAxis: Vertical-P3
 --- !u!1 &1738021463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,9 +2136,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2223992995294619654}
-  - component: {fileID: 2223992995294619655}
   - component: {fileID: 2223992995294619656}
   - component: {fileID: 2223992995294619657}
+  - component: {fileID: 2223992995294619658}
   m_Layer: 0
   m_Name: AmougUs
   m_TagString: Untagged
@@ -2266,23 +2264,6 @@ Transform:
   - {fileID: 4040896155961454697}
   m_Father: {fileID: 2124920928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2223992995294619655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555683007846576828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886fc2b0beac9264aacda23cf48cf9e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceImpulse: 100
-  jumpImpulse: 0
-  hInputName: Horizontal-P1
-  vInputName: Vertical-P1
-  gravity: -9.81
 --- !u!54 &2223992995294619656
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2331,6 +2312,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.15, y: 2.88, z: 2.05}
   m_Center: {x: 0, y: -0.68, z: 0}
+--- !u!114 &2223992995294619658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555683007846576828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5dfada6d7f6a7a40837e19eeb3e7732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  horizontalAxis: Horizontal
+  verticalAxis: Vertical
 --- !u!4 &2342623202852521431
 Transform:
   m_ObjectHideFlags: 0
