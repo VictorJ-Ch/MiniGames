@@ -29,10 +29,10 @@ public class SquarePath : MonoBehaviour
     Vector3 Path()
     {
         float d = Denominator();
-        float x = amplitudeX * Mathf.Cos(frequency * time + phase)/d;
-        float y = amplitudeY * Mathf.Sin(frequency * time + phase)/d;
+        float y = amplitudeX * Mathf.Cos(frequency * time + phase)/d;
+        float z = amplitudeY * Mathf.Sin(frequency * time + phase)/d;
 
-        return new Vector3(x+center.x, y+center.y, center.z);
+        return new Vector3(center.x, y+center.y, z+center.z);
     }
 
     float Denominator()
