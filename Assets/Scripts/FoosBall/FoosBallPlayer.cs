@@ -10,7 +10,7 @@ public class FoosBallPlayer : MonoBehaviour
     private float verticalInput;
 
 
-    void Start()
+    void Update()
     {
         verticalInput = Input.GetAxisRaw(verticalInputName);
     }
