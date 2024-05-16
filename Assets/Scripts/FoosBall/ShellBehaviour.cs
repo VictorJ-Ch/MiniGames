@@ -23,15 +23,15 @@ public class ShellBehaviour : MonoBehaviour
 
     void LimitVelocity()
     {
-        Vector3 velocity = rb.velocity;
-        float signVx = Mathf.Sign(velocity.x);
-        float signVz = Mathf.Sign(velocity.z);
+        //Vector3 velocity = rb.velocity;
+        float signVx = Mathf.Sign(rb.velocity.x);
+        float signVz = Mathf.Sign(rb.velocity.z);
 
-        if (Mathf.Abs(velocity.x) < minSpeedX)
-            rb.velocity = new Vector3(signVx * minSpeedX, 0, velocity.z);
+        if (Mathf.Abs(rb.velocity.x) < minSpeedX)
+            rb.velocity = new Vector3(signVx * minSpeedX, 0, rb.velocity.z);
 
-        if (Mathf.Abs(velocity.z) < minSpeedZ)
-            rb.velocity = new Vector3(velocity.x, 0, signVz * minSpeedZ);
+        if (Mathf.Abs(rb.velocity.z) < minSpeedZ)
+            rb.velocity = new Vector3(rb.velocity.x, 0, signVz * minSpeedZ);
 
         if (rb.velocity.magnitude > maxAbsoluteSpeed)
             rb.velocity = maxAbsoluteSpeed * (rb.velocity.normalized);
