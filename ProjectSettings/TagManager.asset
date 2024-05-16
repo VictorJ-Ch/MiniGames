@@ -15,6 +15,7 @@ TagManager:
   - Ground
   - Bomb
   - Base
+  - FoosballPlayer
   layers:
   - Default
   - TransparentFX
